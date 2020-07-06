@@ -48,7 +48,7 @@ print(" connected to email ... probably")
 # checking the connection to cloud ongodb and printing in the console the list of collections under the database
 
 try:
-    myclient = pymongo.MongoClient("mongodb://mrbacco:mongodb001@cluster0-shard-00-00-goutv.mongodb.net:27017,cluster0-shard-00-01-goutv.mongodb.net:27017,cluster0-shard-00-02-goutv.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority")
+    myclient = pymongo.MongoClient("mongodb://######:########@cluster0-shard-00-00-goutv.mongodb.net:27017,########utv.m#####)
     mydb = myclient["lawyers"]
     mycol = mydb["feedback"]
     print("if connected to db, then these are the collections in mydb: ", mydb.list_collection_names()) #used to check if db is connected
